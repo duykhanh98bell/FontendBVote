@@ -1,0 +1,12 @@
+.fl {
+  display: flex;
+}
+.pt-5 {
+  padding-top: 5px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.w-90 {
+  width: 90px;
+}
