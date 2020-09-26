@@ -1,7 +1,7 @@
 .fl {
   display: flex;
 }
-.pt-5 {
+.ptop-5 {
   padding-top: 5px;
 }
 .pt-20 {
@@ -9,4 +9,13 @@
 }
 .w-90 {
   width: 90px;
+}
+.w-300 {
+  width: 300px;
+}
+.talign-right {
+  text-align: right;
+}
+.talign-center {
+  text-align: center;
 }
