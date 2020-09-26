@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./public/css/bootstrap.min.css" />
+    <script src="./public/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="./public/css/index.css" />
     <link rel="stylesheet" href="./public/css/fontawesome.min.css" />
     <link
@@ -13,69 +13,348 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="./public/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./public//OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3823d10645.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="row">
       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-        <div
-          class="nav flex-column nav-pills"
-          id="v-pills-tab"
-          role="tablist"
-          aria-orientation="vertical"
-        >
+        <div class="nav flex-column nav-pills">
+          <a class="nav-link" href="https://bvote.vn/">Trang Web</a>
+        </div>
+        <p>
           <a
-            class="nav-link active"
-            id="v-pills-home-tab"
-            data-toggle="pill"
-            href="#v-pills-home"
-            role="tab"
-            aria-controls="v-pills-home"
-            aria-selected="true"
-            >Home</a
+            class="btn btn-primary nav-link"
+            data-toggle="collapse"
+            href="#multiCollapseExample1"
+            role="button"
+            aria-expanded="false"
+            aria-controls="multiCollapseExample1"
+            style="text-align: left;"
+            >Quản lý website</a
           >
-          <a
-            class="nav-link"
-            id="v-pills-profile-tab"
-            data-toggle="pill"
-            href="#v-pills-profile"
-            role="tab"
-            aria-controls="v-pills-profile"
-            aria-selected="false"
-            >Profile</a
-          >
-          <a
-            class="nav-link"
-            id="v-pills-messages-tab"
-            data-toggle="pill"
-            href="#v-pills-messages"
-            role="tab"
-            aria-controls="v-pills-messages"
-            aria-selected="false"
-            >Messages</a
-          >
-          <a
-            class="nav-link"
-            id="v-pills-settings-tab"
-            data-toggle="pill"
-            href="#v-pills-settings"
-            role="tab"
-            aria-controls="v-pills-settings"
-            aria-selected="false"
-            >Settings</a
-          >
+        </p>
+        <div class="row">
+          <div class="col">
+            <div
+              class="collapse multi-collapse mleft-80"
+              id="multiCollapseExample1"
+            >
+              <a class="nav-link" href="#">Trang chủ</a>
+              <a class="nav-link" href="#">Giới thiệu</a>
+              <a class="nav-link" href="#">Tin tức sự kiện</a>
+              <a class="nav-link" href="#">Thông tin doanh nghiệp</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9"></div>
+      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+        <form>
+          <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <label
+                for="exampleFormControlTextarea1"
+                style="font-weight: bold;"
+                >Thông tin trang chủ</label
+              >
+            </div>
+
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="9"
+                >
+        Chúng tôi mang tới giải pháp trọn gói cho kỳ đại hội cổ đông sắp tới. Bao gồm dịch vụ hỗ trợ công bố thông tin và dịch vụ biểu quyết online ứng dụng công nghệ blockchain. Mang tới sự minh bạch và toàn vẹn kết quả biểu quyết cho các cổ đông.</textarea
+                >
+              </div>
+            </div>
+          </div>
+
+          <fieldset class="scheduler-border">
+            <legend class="scheduler-border">
+              Giới thiệu BVote
+            </legend>
+
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 cen">
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="12"
+                  >
+BVote là hệ thống đánh giá tín nhiệm trực tuyến ứng dụng Blockchain đầu tiên và duy nhất tại Việt Nam với ưu điểm vượt trội về tính an toàn, bảo mật, minh bạch.
+
+                  Hàng triệu cơ quan Nhà nước, tổ chức doanh nghiệp trên khắp thế giới đang cần một thương hiệu bình chọn trực tuyến ứng dụng Blockchain như BVote. Hệ thống linh hoạt, dễ sử dụng; các giao thức an toàn, bảo mật đem lại kết quả công khai, minh bạch. Hãy liên hệ ngay BVote để sở hữu hệ thống bình chọn chất lượng tối ưu và duy nhất theo cách của riêng bạn.</textarea
+                  >
+                </div>
+              </div>
+
+              <div
+                class="col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                style="text-align: center;"
+              >
+                <video width="320" height="240" controls>
+                  <source
+                    src="./videos/Eminem - Trust Me [ft. Post Malone, Khalid] 2019.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="scheduler-border">
+            <legend class="scheduler-border">
+              Sự kiện nổi bật
+            </legend>
+
+            <div class="row">
+              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <a href="#" class="btn btn-info">
+                  <span class="fa fa-plus" style="margin-right: 10px;"></span>
+                  Thay đổi ảnh nền
+                </a>
+              </div>
+              <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <div class="owl-carousel owl-theme" style="position: relative;">
+                  <div class="item">
+                    <a href="#"
+                      ><i
+                        class="far fa-times-circle"
+                        style="position: absolute; right: 0; font-size: 30px;"
+                      ></i
+                    ></a>
+                    <img
+                      src="./images/61776775_373829769919523_4502676467099893760_n.jpg"
+                      alt=""
+                    />
+                    <h4>Tiêu đề</h4>
+                  </div>
+                  <div class="item">
+                    <a href="#"
+                      ><i
+                        class="far fa-times-circle"
+                        style="position: absolute; right: 0; font-size: 30px;"
+                      ></i
+                    ></a>
+                    <img
+                      src="./images/61776775_373829769919523_4502676467099893760_n.jpg"
+                      alt=""
+                    />
+                    <h4>Tiêu đề</h4>
+                  </div>
+                  <div class="item">
+                    <a href="#"
+                      ><i
+                        class="far fa-times-circle"
+                        style="position: absolute; right: 0; font-size: 30px;"
+                      ></i
+                    ></a>
+                    <img
+                      src="./images/61776775_373829769919523_4502676467099893760_n.jpg"
+                      alt=""
+                    />
+                    <h4>Tiêu đề</h4>
+                  </div>
+                  <div class="item">
+                    <a href="#"
+                      ><i
+                        class="far fa-times-circle"
+                        style="position: absolute; right: 0; font-size: 30px;"
+                      ></i
+                    ></a>
+                    <img
+                      src="./images/61776775_373829769919523_4502676467099893760_n.jpg"
+                      alt=""
+                    />
+                    <h4>Tiêu đề</h4>
+                  </div>
+                  <div class="item">
+                    <a href="#"
+                      ><i
+                        class="far fa-times-circle"
+                        style="position: absolute; right: 0; font-size: 30px;"
+                      ></i
+                    ></a>
+                    <img
+                      src="./images/61776775_373829769919523_4502676467099893760_n.jpg"
+                      alt=""
+                    />
+                    <h4>Tiêu đề</h4>
+                  </div>
+                  <div class="item">
+                    <a href="#"
+                      ><i
+                        class="far fa-times-circle"
+                        style="position: absolute; right: 0; font-size: 30px;"
+                      ></i
+                    ></a>
+                    <img
+                      src="./images/61776775_373829769919523_4502676467099893760_n.jpg"
+                      alt=""
+                    />
+                    <h4>Tiêu đề</h4>
+                  </div>
+                  <div class="item">
+                    <a href="#"
+                      ><i
+                        class="far fa-times-circle"
+                        style="position: absolute; right: 0; font-size: 30px;"
+                      ></i
+                    ></a>
+                    <img
+                      src="./images/61776775_373829769919523_4502676467099893760_n.jpg"
+                      alt=""
+                    />
+                    <h4>Tiêu đề</h4>
+                  </div>
+                  <div class="item">
+                    <a href="#"
+                      ><i
+                        class="far fa-times-circle"
+                        style="position: absolute; right: 0; font-size: 30px;"
+                      ></i
+                    ></a>
+                    <img
+                      src="./images/61776775_373829769919523_4502676467099893760_n.jpg"
+                      alt=""
+                    />
+                    <h4>Tiêu đề</h4>
+                  </div>
+                  <div class="item" style="text-align: center;">
+                    <a href="#"><span class="fa fa-plus"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="row">
+            <h5 style="margin: auto;">Tại sao nên sử dụng BVote</h5>
+          </div>
+
+          <div
+            class="row"
+            style="
+              justify-content: center;
+              margin-top: 20px;
+              margin-bottom: 2em;
+            "
+          >
+            <div class="card" style="width: 15rem; margin-right: 10px;">
+              <div class="card-body">
+                <p class="card-text">
+                  Ứng dụng công nghệ tối ưu thời đại số đem tới sự an toàn, bảo
+                  mật tối đa, đảm bảo tính bất khả xâm phạm, đem lại kết quả
+                  công khai, minh bạch và chính xác nhất.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; margin-right: 10px;">
+              <div class="card-body">
+                <p class="card-text">
+                  Hệ thống được thiết kế đơn giản ngay cả những cổ đông lớn tuổi
+                  cũng có thể dễ dàng sử dụng.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; margin-right: 10px;">
+              <div class="card-body">
+                <p class="card-text">
+                  Họp cổ đông trực tuyến giúp tiết kiệm chi phí tổ chức, đi lại
+                  cho cổ đông từ đó tối ưu hoạt đông doanh nghiệp.
+                </p>
+              </div>
+            </div>
+            <a href="#"
+              ><span
+                class="fa fa-plus"
+                style="margin-top: 5em; margin-left: 2em;"
+              ></span
+            ></a>
+          </div>
+          <fieldset class="scheduler-border">
+            <legend class="scheduler-border" style="width: 200px;">
+              Add logo ban tổ chức
+            </legend>
+
+            <div class="row" style="margin-top: 2em;">
+              <div class="card" style="width: 18rem;">
+                <img
+                  src="./images/imgpsh_fullsize_anim (1).jfif"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img
+                  src="./images/imgpsh_fullsize_anim.jfif"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+
+              <a href="#"
+                ><span
+                  class="fa fa-plus"
+                  style="margin-top: 5em; margin-left: 2em;"
+                ></span
+              ></a>
+            </div>
+          </fieldset>
+
+          <div class="row" style="justify-content: center;">
+            <button
+              type="submit"
+              class="btn btn-success"
+              style="margin-right: 1em;"
+            >
+              Thay đổi
+            </button>
+            <button type="reset" class="btn btn-danger">Thoát</button>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <!-- <script src=".public/js/jquery-3.5.1.min.js"></script> -->
-    <script src="./public/js/bootstrap.min.js"></script>
-    <script src="./public/jquery-3.5.1.min.js"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="./public//OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="./public/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
