@@ -56,10 +56,12 @@
               id="multiCollapseExample1"
               style="padding-left: 60px;"
             >
-              <a class="nav-link" href="#">Trang chủ</a>
-              <a class="nav-link" href="#">Giới thiệu</a>
-              <a class="nav-link" href="#">Tin tức sự kiện</a>
-              <a class="nav-link" href="#">Thông tin doanh nghiệp</a>
+              <a class="nav-link" href="./TrangChu.html">Trang chủ</a>
+              <a class="nav-link" href="./ThongTinGioiThieu.html">Giới thiệu</a>
+              <a class="nav-link" href="./TinTucSuKien.html">Tin tức sự kiện</a>
+              <a class="nav-link" href="./ThongTinDoanhNghiep.html"
+                >Thông tin doanh nghiệp</a
+              >
             </div>
           </div>
         </div>
@@ -67,12 +69,20 @@
 
       <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
         <form>
+          <!-- Ảnh -->
           <div
             class="form-row justify-content-between"
             style="margin-top: 5em;"
           >
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-              <label for="inputGroupFile02" style="margin-top: 5px;">Ảnh</label>
+            <div
+              class="col-xs-2 col-sm-2 col-md-2 col-lg-2"
+              style="text-align: center;"
+            >
+              <label
+                for="inputGroupFile02"
+                style="margin-top: 5px; text-align: center;"
+                >Ảnh</label
+              >
             </div>
 
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
@@ -118,25 +128,39 @@
               </div>
             </div>
           </div>
+          <!-- end Ảnh -->
+          <!-- Tieu de -->
           <div class="form-row">
-            <label for="inputPassword" class="col-sm-2 col-form-label"
+            <label
+              for="inputPassword"
+              class="col-sm-2 col-form-label"
+              style="text-align: center;"
               >Tiêu đề</label
             >
             <div class="col-sm-10">
               <input type="text" class="form-control" id="inputPassword" />
             </div>
           </div>
+          <!-- end Tieu de -->
+          <!-- Lien ket -->
           <div class="form-row" style="margin-top: 2em;">
-            <label for="inputPassword" class="col-sm-2 col-form-label"
+            <label
+              for="inputPassword"
+              class="col-sm-2 col-form-label"
+              style="text-align: center;"
               >Liên kết</label
             >
             <div class="col-sm-10">
               <input type="text" class="form-control" id="inputPassword" />
             </div>
           </div>
+          <!-- end Lien ket -->
           <!-- linh vuc -->
           <div class="form-row" style="margin-top: 2em;">
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div
+              class="col-xs-2 col-sm-2 col-md-2 col-lg-2"
+              style="text-align: center;"
+            >
               <label
                 for="inputPassword"
                 class="col-form-label"
@@ -216,8 +240,13 @@
               </div>
             </div>
           </div>
+          <!-- end linh vuc -->
+          <!-- Noi dung -->
           <div class="form-row" style="margin-top: 2em;">
-            <label for="inputPassword" class="col-sm-2 col-form-label"
+            <label
+              for="inputPassword"
+              class="col-sm-2 col-form-label"
+              style="text-align: center;"
               >Nội dung</label
             >
             <div class="col-sm-10">
@@ -229,7 +258,9 @@
               ></textarea>
             </div>
           </div>
-          <div class="row" style="justify-content: center; margin-top: 1em;">
+          <!-- end Noi dung -->
+          <!-- button -->
+          <div class="row" style="justify-content: center; margin-top: 2em;">
             <button
               type="submit"
               class="btn btn-success"
@@ -239,6 +270,7 @@
             </button>
             <button type="reset" class="btn btn-danger">Thoát</button>
           </div>
+          <!-- end button -->
         </form>
       </div>
     </div>
